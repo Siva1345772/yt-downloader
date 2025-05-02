@@ -1,0 +1,99 @@
+If you're trying to push your local project to GitHub, here's the correct way:
+Initialize git (if not done):
+
+bash
+Copy
+Edit
+git init
+Add your files:
+
+bash
+Copy
+Edit
+git add .
+Commit the changes:
+
+bash
+Copy
+Edit
+git commit -m "Initial commit"
+Add the remote repository:
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/Siva1345772/yt-downloader.git
+Push your changes:
+
+bash
+Copy
+Edit
+git push -u origin main
+If your branch is master, replace main with master.
+
+Would you like help confirming your branch name or fixing any push errors next?
+
+
+
+
+
+
+
+
+You said:
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Siva1345772/yt-downloader.git'
+
+
+ChatGPT said:
+The error:
+
+lua
+Copy
+Edit
+error: src refspec main does not match any
+means that Git can't find a local branch named main. This usually happens when:
+
+You haven't made any commits yet, or
+
+Your current branch is named something else (like master), not main.
+
+✅ To Fix This:
+Step 1: Check your branch
+Run:
+
+bash
+Copy
+Edit
+git branch
+If it shows * master, then you're on the master branch, not main.
+
+Step 2: Make sure you've committed something
+If you haven’t committed yet, Git has nothing to push. You need to:
+
+bash
+Copy
+Edit
+git add .
+git commit -m "Initial commit"
+Step 3: Push using the correct branch name
+If you're on master, push like this:
+
+bash
+Copy
+Edit
+git push -u origin master
+If you're on main, then use:
+
+bash
+Copy
+Edit
+git push -u origin main
+Would you like help renaming your branch to main, or are you okay using master?
+
+
+
+
+
+
+
