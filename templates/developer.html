@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About the Developer | YouTube Downloader</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/jpg" href="/static/site-icon.jpg" sizes="32x32" />
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #2d3748;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2b6cb0, #4299e1);
+      padding: 1.5rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      transition: 0.4s;
+    }
+
+    footer {
+      background: #edf2f7;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #718096;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #2b6cb0;
+        padding: 1rem;
+        border-radius: 0 0 8px 8px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">YouTube Downloader</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="nav">
+      <a href="/">Home</a>
+      <a href="/developer">Developer</a>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Developer Profile -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+      <div class="md:flex">
+        <div class="md:flex-shrink-0 bg-gradient-to-b from-[#2b6cb0] to-[#4299e1] p-8 flex items-center justify-center md:w-1/3">
+          <div class="text-center text-white">
+            <div class="mx-auto h-32 w-32 rounded-full bg-blue-400 mb-4 overflow-hidden border-4 border-white shadow-lg">
+              <img src="/static/profile.jpeg" alt="JD Siva" class="h-full w-full object-cover">
+            </div>
+            <h1 class="text-2xl font-bold">JD Siva</h1>
+            <p class="text-blue-100">Software Developer</p>
+          </div>
+        </div>
+        <div class="p-8 md:w-2/3">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">About Me</h2>
+          <p class="text-gray-600 mb-6">
+            I'm a passionate and dedicated Software Developer with 1 year of hands-on experience in designing, 
+            developing, and maintaining web applications. I specialize in building efficient, scalable, 
+            and user-friendly solutions using modern development tools and technologies.
+          </p>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+              <i class="fas fa-code mr-2 text-[#2b6cb0]"></i> Tech Stack & Skills
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML/CSS</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React.js</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Node.js</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MongoDB</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">REST APIs</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Git</span>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+              <i class="fas fa-bullseye mr-2 text-[#2b6cb0]"></i> What I'm Looking For
+            </h3>
+            <p class="text-gray-600">
+              I'm eager to work on innovative projects where I can contribute my skills and continue growing as a developer. 
+              I enjoy collaborating in team environments and solving real-world challenges through smart code.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+              <i class="fas fa-envelope mr-2 text-[#2b6cb0]"></i> Let's Connect
+            </h3>
+            <p class="text-gray-600 mb-2">
+              I'm open to freelance opportunities, full-time roles, or collaborative tech projects.
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://www.linkedin.com/in/siva-sakthi-aa4b6726b/" class="text-[#2b6cb0] hover:text-[#2c5282]">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a href="https://wa.me/918148823426" class="text-[#2b6cb0] hover:text-[#2c5282]">
+                <i class="fab fa-whatsapp text-xl"></i>
+              </a>
+              <a href="https://github.com/Siva1345772/" class="text-[#2b6cb0] hover:text-[#2c5282]">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Back to Home -->
+    <div class="mt-8 text-center">
+      <a href="/" class="inline-flex items-center text-[#2b6cb0] hover:text-[#2c5282]">
+        <i class="fas fa-arrow-left mr-2"></i> Back to YouTube Downloader
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 YouTube Downloader. All rights reserved.
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
